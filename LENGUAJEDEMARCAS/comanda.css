@@ -1,0 +1,79 @@
+/* 
+Web: Comanda del Chiringuito
+Alumno: Vidal Segura
+Fecha: 8 diciembre
+*/
+
+html {
+	background-color: black;
+	/*Se pone un fondo a la página negro para que se vea con mayor claridad*/
+}
+#contenedor {
+	border: black 50px solid;
+	box-sizing: border-box;
+	/*Declaramos el estilo del borde que encoje toda la web solido y negro*/
+}
+
+#cabecera {
+	background-color: white;
+	margin-top: 0px;
+	height: 150px;
+	text-align: center;
+	/*establecemos la cabezera de color blanco y margin-top 0px
+	el text-aling nos sirve para que el texto quede en medio*/
+}
+
+p {
+	margin: 0px;
+	/* declaramos el margen de los parrafos en 0*/
+}
+
+#contenido {
+	background-color: gainsboro;
+	width: 75%;
+	padding: 25px;
+	height: 350px;
+	text-align: center;
+		/*declaramos estilo de la caja que entra en el div cajaVariable*/
+}
+
+#menuDerecha {
+	width: 25%;
+	margin: 0px;
+	padding: 5px;
+	border: #e8e8e8 5px solid;
+	background-color: white;
+	/*ajustamos el menú para que ocupe un 25%
+	y con un borde sólido de 5px*/
+}
+
+#menuDerecha summary {
+		text-align: center;
+		/*Para alinear las opciones dentro del menú*/
+}
+
+#pieDePágina {
+	background-color: white;
+	text-align: center;
+	height: 190px;
+	margin: 0px;
+	margin-left: -50px;
+	margin-right: -50px;
+	/*usamos los margin para que se ajuste a los bordes de la web*/
+}
+
+#cajaVariable {
+		display:flex;
+		/*para que la pantalla se ajuste sin importar desde que pantalla se entre*/
+}
+
+@media screen and (max-width:600px){
+		/* solo se aplica cuando el viewport es estrecho*/
+		#cajaVariable {
+			display:unset;
+		}
+		
+		#contenido, #menuDerecha{
+			width:100%;	
+		}
+}
